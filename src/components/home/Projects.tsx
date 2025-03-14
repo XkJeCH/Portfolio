@@ -37,7 +37,7 @@ export default function Project() {
       {/* View All Button */}
       <div className="mt-10 flex justify-center">
         <Link to="/projects">
-          <button className="flex items-center text-blue-500 hover:text-blue-700 text-lg border border-blue-500 rounded-md p-2 hover:bg-blue-100">
+        <button className="flex items-center text-blue-700 hover:text-blue-900 text-lg border border-blue-700 rounded-md p-2 hover:bg-blue-200">
             <span>View All</span>
             <FaExternalLinkAlt className="ml-2 w-4 h-4" />
           </button>
@@ -50,27 +50,28 @@ export default function Project() {
 // Project Card Component
 function ProjectCard({ title, description, orgName, githubLink }: ProjectProps) {
   return (
-    <div className="flex flex-col bg-gray-100 dark:bg-gray-800 px-6 py-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-200">
-      {/* Title and Organization */}
-      <div className="flex items-center space-x-4">
-        <div>
-          <div className="text-lg font-semibold text-gray-800 dark:text-gray-200">{title}</div>
-          <div className="text-sm text-gray-600 dark:text-gray-400">{orgName}</div>
-        </div>
-      </div>
-
-      {/* Description */}
-      <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">{description}</p>
-
-      {/* GitHub Link */}
-      <div className="mt-4 flex justify-start">
-        <a href={githubLink} target="_blank" rel="noopener noreferrer">
-          <button className="text-blue-500 hover:text-blue-700 flex items-center">
-            <FaGithub className="mr-2" />
-            GitHub
-          </button>
-        </a>
+    <div className="flex flex-col bg-white dark:bg-gray-800 text-gray-900 dark:text-white px-6 py-8 rounded-xl shadow-lg hover:shadow-2xl">
+    {/* Title and Organization */}
+    <div className="flex items-center space-x-4">
+      <div>
+        <div className="text-lg font-semibold text-gray-900 dark:text-gray-100">{title}</div>
+        <div className="text-sm text-gray-700 dark:text-gray-300">{orgName}</div>
       </div>
     </div>
+  
+    {/* Description */}
+    <p className="mt-4 text-sm text-gray-700 dark:text-gray-300">{description}</p>
+  
+    {/* GitHub Link */}
+    <div className="mt-4 flex justify-start">
+      <a href={githubLink} target="_blank" rel="noopener noreferrer">
+        <button className="text-blue-700 hover:text-blue-900 flex items-center">
+          <FaGithub className="mr-2" />
+          GitHub
+        </button>
+      </a>
+    </div>
+  </div>
+  
   );
 }

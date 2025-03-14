@@ -77,13 +77,14 @@ export default function Navbar() {
 
           {/* get started and dark mode */}
           <div className="flex items-center gap-3 nav__item mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
-            <DarkSwitch />
+          <DarkSwitch aria-label="Toggle dark mode" />
           </div>
 
           {/* Mobile menu button - เพิ่ม ref */}
           <button
             ref={menuButtonRef}
             onClick={handleMobileMenuClick}
+            aria-label="Toggle mobile menu" 
             className="px-2 py-1 text-gray-500 dark:text-gray-400 rounded-md lg:hidden hover:text-indigo-500 dark:hover:text-indigo-400 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-hidden"
           >
             <svg

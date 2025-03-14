@@ -4,17 +4,17 @@ import { useState, useEffect } from "react"
 const slides = [
   {
     id: 1,
-    image: "/images/std.jpg",
+    image: "/images/std.webp",
     alt: "Hero Image 1"
   },
   {
     id: 2,
-    image: "/images/darkroom.jpg",
+    image: "/images/darkroom.webp",
     alt: "Hero Image 2"
   },
   {
     id: 3,
-    image: "/images/cplogo.jpg",
+    image: "/images/cplogo.webp",
     alt: "Hero Image 3"
   }
 ]

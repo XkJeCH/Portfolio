@@ -54,14 +54,14 @@ export default function Skills() {
       </div>
 
       {/* View All Button */}
-      <div className="mt-10 flex justify-center">
-        <Link to="/skills">
-          <button className="flex items-center text-blue-500 hover:text-blue-700 text-lg border border-blue-500 rounded-md p-2 hover:bg-blue-100">
-            <span>View All</span>
-            <FaExternalLinkAlt className="ml-2 w-4 h-4" />
-          </button>
-        </Link>
-      </div>
+<div className="mt-10 flex justify-center">
+  <Link to="/skills">
+    <button className="flex items-center text-blue-700 hover:text-blue-900 text-lg border border-blue-700 rounded-md p-2 hover:bg-blue-200">
+      <span>View All</span>
+      <FaExternalLinkAlt className="ml-2 w-4 h-4" />
+    </button>
+  </Link>
+</div>
     </Container>
   );
 }
